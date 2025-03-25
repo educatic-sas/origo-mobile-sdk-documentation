@@ -1,0 +1,3265 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Developer Documentation">
+      
+      
+        <meta name="author" content="HID Global">
+      
+      
+        <link rel="canonical" href="https://www.hidglobal.com/solutions/access-control/hid-mobile-access-solutions/getting-started/getting-started.html">
+      
+      
+        <link rel="prev" href="../index.html">
+      
+      
+        <link rel="next" href="logging.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Getting Started with the SDK - Origo Mobile SDK for Android</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#android-library" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Origo Mobile SDK for Android" class="md-header__button md-logo" aria-label="Origo Mobile SDK for Android" data-md-component="logo">
+      
+  <img src="../assets/images/HID-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Origo Mobile SDK for Android
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started with the SDK
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Introduction
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="getting-started.html" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../errors/sdk-errors.html" class="md-tabs__link">
+          
+  
+  Error Codes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../code-samples/lockservice-code.html" class="md-tabs__link">
+          
+  
+  Code Samples
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../api-changes/3.4.x.html" class="md-tabs__link">
+          
+  
+  API Revision History
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="google-wallet-integration.html" class="md-tabs__link">
+          
+  
+  Wallet Integration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="single-sign-on.html" class="md-tabs__link">
+          
+  
+  Single Sign-On
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Origo Mobile SDK for Android" class="md-nav__button md-logo" aria-label="Origo Mobile SDK for Android" data-md-component="logo">
+      
+  <img src="../assets/images/HID-logo.svg" alt="logo">
+
+    </a>
+    Origo Mobile SDK for Android
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting Started with the SDK
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="getting-started.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with the SDK
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#android-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Android library
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back-up-user-dataauto-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Back Up User Data/Auto Backup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Back Up User Data/Auto Backup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-auto-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enabling Auto Backup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-note-on-different-phone-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      A note on different phone models
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origo-mobile-keys-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origo Mobile keys API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Origo Mobile keys API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initializing-the-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initializing the API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origo-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origo Favorite Reader
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Origo Favorite Reader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initializing-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initializing favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove all favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-all-favorite-readers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get all favorite readers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-nearby-readers-based-on-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get nearby readers based on priority
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error messages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origo-sdk-ble-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origo SDK BLE Calibration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Origo SDK BLE Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calibration Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-rasp-runtime-application-self-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is RASP (runtime application self-protection)?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seos-tsm-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seos TSM integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seos TSM integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application startup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-seos-wallet-oip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining SEOS, Wallet, OIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origo-organization-specific-contact-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origo Organization specific contact information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Origo Organization specific contact information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#content-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#talking-to-seos-in-the-secure-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Talking to Seos in the secure element
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Talking to Seos in the secure element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#listing-issued-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listing issued keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-metadata-about-seos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading metadata about Seos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observing-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observing changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluetooth-reader-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth reader integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bluetooth reader integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ble-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLE configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opening-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opening modes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reader-connection-callbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reader connection callbacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#host-based-card-emulation-nfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Host-based Card Emulation (NFC)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Host-based Card Emulation (NFC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reader-connection-callbacks_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reader connection callbacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application logging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-eligibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device eligibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enforcement-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enforcement Policy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logging.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="proguard.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProGuard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="permissions.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Permissions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="migration-guide.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migration Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Error Codes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Error Codes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errors/sdk-errors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDK Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errors/status-words.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Seos Status Words
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errors/gatt-errors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GATT Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Code Samples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Code Samples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/lockservice-code.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lockservice Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/photoid-sample.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Photo ID Sample
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/securestorage-sample.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Secure Storage Sample
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/favorite-reader-sample.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Favorite Reader Sample
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/google-wallet-sample.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Wallet Sample
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/organization-specific-sample.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organization specific contact information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/hid-identity-positioning.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HID Identity Positioning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/mobile-access-and-identity-positioning.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mobile Access and Identity Positioning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/sso-button-state.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Single Sign-On
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/calibration-sample.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BLE Calibration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-samples/error-handling-sample.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Revision History
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            API Revision History
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/3.4.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/3.3.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/3.2.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/3.1.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/3.0.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.0.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/2.2.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/2.1.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/2.0.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.0.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.10.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.10.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.9.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.9.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.8.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.8.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.7.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.7.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.6.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.6.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.5.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.4.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.3.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.2.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/1.1.x.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1.x
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-changes/known-issues.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Known Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wallet Integration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Wallet Integration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="google-wallet-integration.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Wallet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Single Sign-On
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Single Sign-On
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="single-sign-on.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Single Sign-On
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#android-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Android library
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back-up-user-dataauto-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Back Up User Data/Auto Backup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Back Up User Data/Auto Backup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-auto-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enabling Auto Backup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-note-on-different-phone-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      A note on different phone models
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origo-mobile-keys-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origo Mobile keys API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Origo Mobile keys API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initializing-the-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initializing the API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origo-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origo Favorite Reader
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Origo Favorite Reader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initializing-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initializing favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove all favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-all-favorite-readers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get all favorite readers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-nearby-readers-based-on-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get nearby readers based on priority
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-favorite-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update favorite reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error messages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origo-sdk-ble-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origo SDK BLE Calibration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Origo SDK BLE Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calibration Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-rasp-runtime-application-self-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is RASP (runtime application self-protection)?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seos-tsm-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seos TSM integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seos TSM integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application startup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-seos-wallet-oip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining SEOS, Wallet, OIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origo-organization-specific-contact-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origo Organization specific contact information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Origo Organization specific contact information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#content-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#talking-to-seos-in-the-secure-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Talking to Seos in the secure element
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Talking to Seos in the secure element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#listing-issued-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listing issued keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-metadata-about-seos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading metadata about Seos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observing-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observing changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluetooth-reader-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth reader integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bluetooth reader integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ble-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLE configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opening-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opening modes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reader-connection-callbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reader connection callbacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#host-based-card-emulation-nfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Host-based Card Emulation (NFC)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Host-based Card Emulation (NFC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reader-connection-callbacks_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reader connection callbacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application logging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-eligibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device eligibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enforcement-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enforcement Policy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Getting Started with the SDK</h1>
+
+<h2 id="android-library">Android library<a class="headerlink" href="#android-library" title="Permanent link">⚓︎</a></h2>
+<p>The Origo Mobile SDK for Android is provided as a single Android library (.aar) file. The SDK file
+comes in two variants:</p>
+<ul>
+<li>The development SDK file has a <em>-debug</em> suffix and is intended to be used during development.</li>
+<li>The production SDK file has a <em>-release</em> suffix and contains anti-tampering guards.</li>
+</ul>
+<p>It is important to make sure you switch implementation before publishing your application.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>SDK cannot be downgraded once it has been upgraded to version "1.7.7" or higher. If we
+want to downgrade the SDK version, then it has to go as a fresh installation. Integrating apps
+should include the "androidx.security:security-crypto:1.1.0-alpha03" API as transitive dependencies
+starting with SDK version "1.7.7" in their application build.gradle.</p>
+</div>
+<p>In your apps <code>build.gradle</code> file:</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">repositories</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="n">flatDir</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="n">dirs</span><span class="w"> </span><span class="s1">&#39;libs&#39;</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="w">    </span><span class="c1">//...</span>
+<span class="o">}</span>
+<span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="c1">// Origo and mobile keys SDK</span>
+<span class="w">    </span><span class="n">releaseImplementation</span><span class="w"> </span><span class="nl">name:</span><span class="w"> </span><span class="s1">&#39;origo-sdk-release&#39;</span><span class="o">,</span><span class="w"> </span><span class="nl">version:</span><span class="w"> </span><span class="s1">&#39;x.x.x&#39;</span><span class="o">,</span><span class="w"> </span><span class="nl">ext:</span><span class="w"> </span><span class="s1">&#39;aar&#39;</span>
+<span class="w">    </span><span class="n">debugImplementation</span><span class="w"> </span><span class="nl">name:</span><span class="w"> </span><span class="s1">&#39;origo-sdk-debug&#39;</span><span class="o">,</span><span class="w"> </span><span class="nl">version:</span><span class="w"> </span><span class="s1">&#39;x.x.x.&#39;</span><span class="o">,</span><span class="w"> </span><span class="nl">ext:</span><span class="w"> </span><span class="s1">&#39;aar&#39;</span>
+
+<span class="w">    </span><span class="c1">// Origo transitive dependencies</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;org.bouncycastle:bcprov-jdk15to18:1.78.1&#39;</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;com.google.code.gson:gson:2.10.1&#39;</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;org.slf4j:slf4j-api:2.0.9&#39;</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;com.squareup.okhttp3:okhttp:4.12.0&#39;</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;com.mixpanel.android:mixpanel-android:7.3.0&#39;</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;androidx.preference:preference-ktx:1.2.0&#39;</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;androidx.security:security-crypto:1.1.0-alpha06&#39;</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;androidx.room:room-runtime:2.6.1&#39;</span>
+<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;androidx.room:room-ktx:2.6.1&#39;</span>
+<span class="w">    </span><span class="c1">//...</span>
+<span class="o">}</span>
+</code></pre></div></td></tr></table></div>
+In case your project <code>settings.gradle</code> file has <code>dependencyResolutionManagement</code> and your gradle version is 
+above 6.8 make the following changes</p>
+<p>Remove repositories section in your module build.gradle
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">repositories</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="n">flatDir</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="n">dirs</span><span class="w"> </span><span class="s1">&#39;libs&#39;</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="w">    </span><span class="c1">//...</span>
+<span class="o">}</span>
+</code></pre></div></td></tr></table></div></p>
+<p>And add to <code>dependencyResolutionManagement</code> as below</p>
+<div class="highlight"><pre><span></span><code>   repositories {
+        google()
+        mavenCentral()
+            flatDir {
+                dirs &#39;app\\libs&#39;
+        }
+    }
+</code></pre></div>
+<h2 id="back-up-user-dataauto-backup">Back Up User Data/Auto Backup<a class="headerlink" href="#back-up-user-dataauto-backup" title="Permanent link">⚓︎</a></h2>
+<p>The HID Origo Android SDK stores encrypted, non-transferable data on the device. Therefore, using
+the Auto Backup functionality provided by default in Android 6.0 (API level 23) and later is not
+supported. The easiest way to disable Auto Backup is by inserting the following in your
+<strong>AndroidManifest.xml</strong> file.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;manifest</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="nt">&gt;</span>
+<span class="w">    </span>...
+<span class="w">    </span><span class="nt">&lt;application</span>
+<span class="w">        </span><span class="na">tools:replace=</span><span class="s">&quot;android:fullBackupContent&quot;</span>
+<span class="w">         </span><span class="na">android:allowBackup=</span><span class="s">&quot;false&quot;</span>
+<span class="w">         </span><span class="na">android:fullBackupContent =</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="nt">&gt;</span>
+<span class="w">        </span>...
+<span class="w">    </span><span class="nt">&lt;/application&gt;</span>
+<span class="nt">&lt;/manifest&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>If your application targets Android 6.0 (API level 23) <code>android:allowBackup</code> will default to <code>true</code>,
+so you will need to set the above explicitly.</p>
+<h3 id="enabling-auto-backup">Enabling Auto Backup<a class="headerlink" href="#enabling-auto-backup" title="Permanent link">⚓︎</a></h3>
+<p>If you need to enable Auto Backup for your application you need to make certain adjustments to your
+app configuration. As of Origo SDK 1.3.0 this is done automatically by the SDK,
+but if you are using an earlier version, or if you need to exclude other files from being backed up,
+you need to manually specify all of them.</p>
+<p>This is done by following the instructions
+on <a href="https://developer.android.com/guide/topics/data/autobackup.html#IncludingFiles">https://developer.android.com/guide/topics/data/autobackup.html#IncludingFiles</a></p>
+<p>Your fullBackupContent resource <em>must</em> exclude the following files:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;full-backup-content&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- AAMS SDK --&gt;</span>
+<span class="w">        </span><span class="nt">&lt;exclude</span><span class="w"> </span><span class="na">domain=</span><span class="s">&quot;sharedpref&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;soft-se.xml&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;exclude</span><span class="w"> </span><span class="na">domain=</span><span class="s">&quot;sharedpref&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;mobileKeysProperties.xml&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;exclude</span><span class="w"> </span><span class="na">domain=</span><span class="s">&quot;sharedpref&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;mobileKeysPropertiesEnc.xml&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;exclude</span><span class="w"> </span><span class="na">domain=</span><span class="s">&quot;file&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;wrappingKey&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- ORIGO SDK --&gt;</span>
+<span class="w">        </span><span class="nt">&lt;exclude</span><span class="w"> </span><span class="na">domain=</span><span class="s">&quot;sharedpref&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;zJdjs5aWWXIUzKVd.xml&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="cm">&lt;!--&lt;exclude domain=&quot;sharedpref&quot; path=&quot;YOUR_OWN_FILE.xml&quot;/&gt;--&gt;</span>
+
+<span class="nt">&lt;/full-backup-content&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>This will exclude the non-transferable data created by the SDK from the backup, while still backing
+up other data created by the app..</p>
+<h3 id="a-note-on-different-phone-models">A note on different phone models<a class="headerlink" href="#a-note-on-different-phone-models" title="Permanent link">⚓︎</a></h3>
+<p>The measured RSSI Values could differ between different phone model, BLE chipsets, phone antennas,
+and phone firmwares.</p>
+<p>On certain phones, NFC is configured to use the SIM card only. One example is certain Samsung phones
+after upgrading them to Android 5.x. On these phones, the NFC processing method needs to be changed
+to "Android" instead of SIM for HCE to work.</p>
+<h2 id="origo-mobile-keys-api">Origo Mobile keys API<a class="headerlink" href="#origo-mobile-keys-api" title="Permanent link">⚓︎</a></h2>
+<p>The main class in the SDK is <code>com.hid.origo.api.OrigoMobileKeysApi</code>. This class provides a
+centralized entry point for the Seos mobile integration.</p>
+<p><code>OrigoMobileKeysApi</code> contains three parts:</p>
+<ul>
+<li><code>com.hid.origo.api.OrigoMobileKeys.</code> Responsible for both Seos TSM communication and Seos secure
+  element functionality.</li>
+<li><code>com.hid.origo.api.OrigoReaderConnectionController.</code> Used for controlling the Bluetooth and NFC
+  reader communication.</li>
+<li><code>com.hid.origo.api.OrigoDeviceEligibility.</code> Contains device specific configurations and
+  information about working/non-working features.</li>
+</ul>
+<h3 id="initializing-the-api">Initializing the API<a class="headerlink" href="#initializing-the-api" title="Permanent link">⚓︎</a></h3>
+<p>The <code>OrigoMobileKeysApi</code> interface is obtained using the <code>.getInstance()</code> method, however to access
+the <code>OrigoMobileKeys</code> and <code>OrigoReaderConnectionController</code> interfaces, the API must be initialized.</p>
+<p>Firstly, make sure that the API is not already initialized by calling <code>.isInitialized()</code>. Then
+initialize the API using the following method:</p>
+<p><code>.initialize (Context context, OrigoApiConfiguration origoApiConfiguration, OrigoScanConfiguration origoScanConfiguration, String applicationId).</code></p>
+<h2 id="origo-favorite-reader">Origo Favorite Reader<a class="headerlink" href="#origo-favorite-reader" title="Permanent link">⚓︎</a></h2>
+<p>To integrate the favorite reader in your application, you need to create the instance for <code>com.hid.origo.api.favoriteReader.OrigoFavoriteReaderManager</code>. This provides methods for you to add, remove and retrieve favorite readers. Please refer to <code>Javadoc</code> for more technical details.</p>
+<h3 id="initializing-favorite-reader">Initializing favorite reader<a class="headerlink" href="#initializing-favorite-reader" title="Permanent link">⚓︎</a></h3>
+<p>The <code>OrigoFavoriteReaderManager</code> is a singleton class and you need to initialize the class in your application and need to call <code>getInstance()</code> method it will return the instance of <code>OrigoFavoriteReaderManager</code>.</p>
+<h3 id="add-favorite-reader">Add favorite reader<a class="headerlink" href="#add-favorite-reader" title="Permanent link">⚓︎</a></h3>
+<p>To add favorite reader, you need to call <code>addFavoriteReader(@NonNull OrigoFavoriteReader reader)</code> method in your application. Make sure <code>OrigoFavoriteReader</code> NonNull parameters assigned properly. <code>OrigoFavoriteReader</code> in this class <code>address</code> is the mandatory parameter. Please refer to the <a href="../getting-started/getting-started.html#error-messages">Error messages</a> section for error details.</p>
+<h3 id="remove-favorite-reader">Remove favorite reader<a class="headerlink" href="#remove-favorite-reader" title="Permanent link">⚓︎</a></h3>
+<p>To remove the favorite reader, you need to call <code>removeFavoriteReader(@NonNull OrigoFavoriteReader reader)</code> method in your application and you need to pass the <code>OrigoFavoriteReader</code> object as a parameter. Please refer to the <a href="../getting-started/getting-started.html#error-messages">Error messages</a> section for error details.</p>
+<h3 id="remove-all-favorite-reader">Remove all favorite reader<a class="headerlink" href="#remove-all-favorite-reader" title="Permanent link">⚓︎</a></h3>
+<p>To remove all favorite reader, you need to call <code>removeAllFavoriteReaders()</code> method in your application.</p>
+<h3 id="get-all-favorite-readers">Get all favorite readers<a class="headerlink" href="#get-all-favorite-readers" title="Permanent link">⚓︎</a></h3>
+<p>You need to call <code>getFavoriteReaders()</code> method in your application and this method will return the list of favorite readers.</p>
+<h3 id="get-nearby-readers-based-on-priority">Get nearby readers based on priority<a class="headerlink" href="#get-nearby-readers-based-on-priority" title="Permanent link">⚓︎</a></h3>
+<p>You need to call <code>getPrioritizedNearByReaders()</code> method in your application and this method will return nearby readers which are sorted by favorite readers at the top and strong RSSI(Received signal strength indication) signal readers will be the next.</p>
+<h3 id="update-favorite-reader">Update favorite reader<a class="headerlink" href="#update-favorite-reader" title="Permanent link">⚓︎</a></h3>
+<p>To update a specific favorite reader, you need to call <code>updateFavoriteReader(@NonNull OrigoFavoriteReader origoFavoriteReader)</code> method in your application and user need to pass the <code>OrigoFavoriteReader</code> object as a parameter. Make sure the <code>OrigoFavoriteReader</code> NonNull parameter is assigned properly. <code>OrigoFavoriteReader</code> in this class <code>address</code> is the mandatory parameter and <code>readerName, readerLastSeen, readerPSN</code> can be updated except <code>address</code>. Please refer to the <a href="../getting-started/getting-started.html#error-messages">Error messages</a> section for error details.</p>
+<h3 id="error-messages">Error messages<a class="headerlink" href="#error-messages" title="Permanent link">⚓︎</a></h3>
+<p>While implementing favorite reader in your application, you may get following Error messages :</p>
+<h4 id="add-favorite-reader_1">Add favorite reader<a class="headerlink" href="#add-favorite-reader_1" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li><code>Mandatory fields empty</code>: If address field is empty, this method will throw an exception <code>Reader address missing, not eligible to add as a Favorite reader</code>.</li>
+<li><code>Duplicate Favorite Reader</code>: If favorite reader is already added, this method will throw an exception <code>Reader already added as a favorite reader</code>.</li>
+</ul>
+<h4 id="remove-favorite-reader_1">Remove favorite reader<a class="headerlink" href="#remove-favorite-reader_1" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li><code>Reader not available</code>: If the given reader is not added as a favorite reader, Then If you try to remove it from the favorite list, this method will throw an exception <code>Reader is not available in the favorite readers.</code></li>
+</ul>
+<h4 id="update-favorite-reader_1">Update favorite reader<a class="headerlink" href="#update-favorite-reader_1" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li><code>Reader not available</code>: If the given reader is not added as a favorite reader, then If you try to update it in the favorite list, this method will throw an exception <code>Reader is not available in the favorite readers.</code></li>
+</ul>
+<h2 id="origo-sdk-ble-calibration">Origo SDK BLE Calibration<a class="headerlink" href="#origo-sdk-ble-calibration" title="Permanent link">⚓︎</a></h2>
+<p>The BLE calibration feature(<strong>only for TAP gesture</strong>) in the Origo SDK allows mobile devices to fine-tune the read range with readers. This is specifically useful for applications where users want control over how close the mobile device needs to be to a reader for opening via BLE Tap gesture.</p>
+<p>This feature is provided through the <code>OrigoReaderCalibrationManager</code> class, which lets developers calibrate both specific and multiple readers at different distances, making it flexible for various use cases.</p>
+<h5 id="why-use-ble-calibration">Why Use BLE Calibration?<a class="headerlink" href="#why-use-ble-calibration" title="Permanent link">⚓︎</a></h5>
+<p>This BLE calibration feature addresses the challenge of varying read distances in environments where precise control over user proximity is needed. With this, applications can deliver a more reliable, personalized experience, ensuring users interact with readers at their preferred distances. <br><br>
+Many Android devices have BLE signals of varying strengths, causing them to communicate at different distances. BLE calibration helps standardize these interactions across diverse devices, allowing for more consistent performance and user experience.</p>
+<h5 id="does-the-ble-sensitivity-option-still-have-support">Does the BLE sensitivity option still have support?<a class="headerlink" href="#does-the-ble-sensitivity-option-still-have-support" title="Permanent link">⚓︎</a></h5>
+<p>Yes, BLE sensitivity is still supported.</p>
+<h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">⚓︎</a></h3>
+<h4 id="calibration-modes-and-read-ranges">Calibration Modes and Read Ranges:<a class="headerlink" href="#calibration-modes-and-read-ranges" title="Permanent link">⚓︎</a></h4>
+<p>To utilize the BLE calibration feature within the <code>OrigoReaderCalibrationManager</code>, developers need to first create a <code>Calibration</code> object.
+This object encapsulates the calibration settings, such as the reader's address, the desired read range, and whether the calibration should apply to all readers or a specific one.
+The <code>Calibration</code> object is then used when calling methods in <code>OrigoReaderCalibrationManager</code> to manage calibration data (i.e., to add, update, or remove calibration).</p>
+<p>There are two primary ways to instantiate a <code>Calibration</code> object, depending on the type of calibration desired:</p>
+<h4 id="1-custom-range-calibration">1. Custom Range Calibration:<a class="headerlink" href="#1-custom-range-calibration" title="Permanent link">⚓︎</a></h4>
+<p>For precise custom calibration, developers can specify a <code>customRangeOffset</code> along with <code>ReadRange.CUSTOM</code>.
+This is ideal for cases where the default ranges (e.g., NEARBY, FAR) don’t meet the application’s specific needs. The range can be changed within 10dBm only to avoid unexpected behaviour.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">val</span><span class="w"> </span><span class="n">calibration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Calibration</span><span class="p">(</span>
+<span class="n">readerAddress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;reader-123&quot;</span><span class="p">,</span>
+<span class="n">readRange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OrigoReaderCalibrationManager</span><span class="p">.</span><span class="na">ReadRange</span><span class="p">.</span><span class="na">CUSTOM</span><span class="p">,</span>
+<span class="n">customRange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span>
+<span class="n">isApplyToAllReaders</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="2-predefined-range-calibration">2. Predefined Range Calibration:<a class="headerlink" href="#2-predefined-range-calibration" title="Permanent link">⚓︎</a></h4>
+<p>For scenarios where one of the predefined ranges (e.g., NEARBY, FAR) is sufficient, developers can directly set a ReadRange value without specifying a custom offset.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">val</span><span class="w"> </span><span class="n">calibration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Calibration</span><span class="p">(</span>
+<span class="n">readerAddress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;reader-123&quot;</span><span class="p">,</span>
+<span class="n">readRange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OrigoReaderCalibrationManager</span><span class="p">.</span><span class="na">ReadRange</span><span class="p">.</span><span class="na">NEARBY</span><span class="p">,</span>
+<span class="n">isApplyToAllReaders</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>The ReadRange enum defines several preset distances:<br></p>
+<table>
+<thead>
+<tr>
+<th>Enum</th>
+<th>Value (dBm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TOO_NEARBY</code></td>
+<td>-10</td>
+</tr>
+<tr>
+<td><code>NEARBY</code></td>
+<td>-5</td>
+</tr>
+<tr>
+<td><code>CUSTOM</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>FAR</code></td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>TOO_FAR</code></td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<h4 id="minimum-maximum-calibration-range">Minimum &amp; Maximum Calibration Range<a class="headerlink" href="#minimum-maximum-calibration-range" title="Permanent link">⚓︎</a></h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Pre-defined options</th>
+<th>Custom (dBm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Minimum</strong></td>
+<td><code>TOO_NEARBY</code></td>
+<td><code>-10</code></td>
+</tr>
+<tr>
+<td><strong>Maximum</strong></td>
+<td><code>TOO_FAR</code></td>
+<td><code>10</code></td>
+</tr>
+</tbody>
+</table>
+<p>After creating the <code>Calibration</code> object, it can be passed to <code>OrigoReaderCalibrationManager</code> methods like <code>addCalibration()</code>, <code>updateCalibration()</code>, and <code>removeCalibration()</code> to manage the calibration data for the specified reader(s).</p>
+<h4 id="exclusive-calibration">Exclusive Calibration:<a class="headerlink" href="#exclusive-calibration" title="Permanent link">⚓︎</a></h4>
+<p>Applies to specific readers. This is useful for targeting individual readers with tailored settings.</p>
+<h4 id="common-calibration">Common Calibration:<a class="headerlink" href="#common-calibration" title="Permanent link">⚓︎</a></h4>
+<p>Applies globally to all readers unless overridden by an exclusive calibration.</p>
+<h3 id="important-methods">Important Methods<a class="headerlink" href="#important-methods" title="Permanent link">⚓︎</a></h3>
+<h4 id="addcalibrationcalibration-calibration">addCalibration(calibration: Calibration):<a class="headerlink" href="#addcalibrationcalibration-calibration" title="Permanent link">⚓︎</a></h4>
+<p>Adds a new calibration. If isApplyToAllReaders is true, it’s stored as a common calibration; otherwise, it’s saved as exclusive for a specific reader.</p>
+<h4 id="removecalibrationcalibration-calibration">removeCalibration(calibration: Calibration):<a class="headerlink" href="#removecalibrationcalibration-calibration" title="Permanent link">⚓︎</a></h4>
+<p>Removes an existing calibration for a specific reader(exclusively calibrated). Common calibration is removed separately using removeCommonReaderCalibration().</p>
+<h4 id="updatecalibrationcalibration-calibration">updateCalibration(calibration: Calibration):<a class="headerlink" href="#updatecalibrationcalibration-calibration" title="Permanent link">⚓︎</a></h4>
+<p>Updates an existing calibration. Allows adjustment of the read range or other parameters as needed.</p>
+<h4 id="getcalibrationifpresentreaderaddress-string">getCalibrationIfPresent(readerAddress: String):<a class="headerlink" href="#getcalibrationifpresentreaderaddress-string" title="Permanent link">⚓︎</a></h4>
+<p>Fetches calibration data for a specific reader, if available.</p>
+<h4 id="getexclusivecalibrations">getExclusiveCalibrations()<a class="headerlink" href="#getexclusivecalibrations" title="Permanent link">⚓︎</a></h4>
+<p>Retrieve lists of exclusive calibrations.</p>
+<h4 id="getcommonreaderscalibration">getCommonReadersCalibration():<a class="headerlink" href="#getcommonreaderscalibration" title="Permanent link">⚓︎</a></h4>
+<p>Retrieve lists of common calibrations.</p>
+<h4 id="removecommonreadercalibration">removeCommonReaderCalibration():<a class="headerlink" href="#removecommonreadercalibration" title="Permanent link">⚓︎</a></h4>
+<p>Remove common calibration.</p>
+<h4 id="removeallexclusivecalibrations">removeAllExclusiveCalibrations():<a class="headerlink" href="#removeallexclusivecalibrations" title="Permanent link">⚓︎</a></h4>
+<p>Remove all lists of exclusive calibrations.</p>
+<h3 id="calibration-process">Calibration Process<a class="headerlink" href="#calibration-process" title="Permanent link">⚓︎</a></h3>
+<p>The calibration process allows applications to adjust the mobile-to-reader distance for proximity detection. This enables developers to tailor the reading experience based on user preferences or environmental factors. Calibration can be started and stopped using:</p>
+<div class="admonition samples">
+<p class="admonition-title">Samples</p>
+<ul>
+<li>Recommended to follow the <a href="../getting-started/getting-started.html#startcalibrationmode-and-stopcalibrationmode">instructions</a> inorder to avoid anti-passpack during the calibration.</li>
+</ul>
+</div>
+<h4 id="startcalibrationmode-and-stopcalibrationmode">startCalibrationMode() and stopCalibrationMode():<a class="headerlink" href="#startcalibrationmode-and-stopcalibrationmode" title="Permanent link">⚓︎</a></h4>
+<p>Enable or disable calibration mode. Enabling calibration mode before calibrating reader(s) disables Tap communications to the reader(s) inorder to ensure smooth calibration experience by avoiding anti-passback. Remember to stop calibration mode after calibrating to resume reader communications.</p>
+<div class="admonition samples">
+<p class="admonition-title">Samples</p>
+<ul>
+<li>For code examples, refer to the <a href="../code-samples/calibration-sample.html">BLE Calibration Code Samples</a> </li>
+</ul>
+</div>
+<h3 id="what-is-rasp-runtime-application-self-protection">What is RASP (runtime application self-protection)?<a class="headerlink" href="#what-is-rasp-runtime-application-self-protection" title="Permanent link">⚓︎</a></h3>
+<p><strong>RASP (runtime application self-protection)</strong> security enables apps to monitor for suspicious behavior at runtime. When a runtime threat is detected, the RASP features help defend against threat actors attempting to tamper with your app or perform a dynamic analysis.</p>
+<h4 id="hook-detection">Hook Detection<a class="headerlink" href="#hook-detection" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li>Identifies if runtime hooking frameworks are being used to intercept or modify app behavior.</li>
+<li><strong>Risk:</strong> Attackers can manipulate app logic or bypass security checks.</li>
+<li><strong>Defense:</strong> The SDK will crash the app if <strong>Hooking detection</strong> is triggered..</li>
+</ul>
+<h4 id="debug-detection">Debug Detection<a class="headerlink" href="#debug-detection" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li>
+<p>Detects if a debugger is attached to the app during runtime.</p>
+</li>
+<li>
+<p><strong>Risk:</strong> Debuggers can be used to step through code, alter variables, or expose sensitive data.</p>
+</li>
+<li>
+<p><strong>Defense:</strong> The SDK will crash the app if <strong>debug detection</strong> is triggered..</p>
+</li>
+</ul>
+<h4 id="emulator-detection">Emulator Detection<a class="headerlink" href="#emulator-detection" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li>
+<p>Identifies if the release signed app is running on an emulator instead of a physical device.</p>
+</li>
+<li>
+<p><strong>Risk:</strong> Emulators facilitate reverse engineering and automated attacks in a controlled environment.</p>
+</li>
+<li>
+<p><strong>Defense:</strong> The SDK will crash the app if <strong>emulator detection</strong> is triggered.</p>
+</li>
+</ul>
+<h4 id="root-detection">Root Detection<a class="headerlink" href="#root-detection" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li>
+<p>Checks if the device is rooted or jailbroken, giving users elevated permissions.</p>
+</li>
+<li>
+<p><strong>Risk:</strong> Root access can bypass app security, modify files, or inject malicious code.</p>
+</li>
+<li>
+<p><strong>Defense:</strong> Root detection will not crash the app. This is logged in the portal for jailbroken or rooted devices so the admin can take further action.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The release SDK will not run in debug build. For example, if the release AAR is integrated and the app is running as a debug build, the SDK will crash the app.</p>
+</div>
+<h2 id="seos-tsm-integration">Seos TSM integration<a class="headerlink" href="#seos-tsm-integration" title="Permanent link">⚓︎</a></h2>
+<p>There are five methods in the API to handle Seos TSM integration. These are located in the
+<code>com.hid.origo.api.OrigoMobileKeys</code> interface.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">OrigoMobileKeys</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">applicationStartup</span><span class="p">(</span><span class="n">OrigoMobileKeysCallback</span><span class="w"> </span><span class="n">mobileKeysCallback</span><span class="p">,</span><span class="w"> </span><span class="n">OrigoApplicationProperty</span><span class="p">...</span><span class="w"> </span><span class="n">applicationProperties</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">endpointSetup</span><span class="p">(</span><span class="n">OrigoMobileKeysCallback</span><span class="w"> </span><span class="n">mobileKeysCallback</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">activationCode</span><span class="p">,</span><span class="w"> </span><span class="n">OrigoApplicationProperty</span><span class="p">...</span><span class="w"> </span><span class="n">applicationProperties</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">endpointUpdate</span><span class="p">(</span><span class="n">OrigoMobileKeysProgressCallback</span><span class="w"> </span><span class="n">mobileKeysProgressCallback</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">isEndpointSetupComplete</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">OrigoMobileKeysException</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">unregisterEndpoint</span><span class="p">(</span><span class="n">OrigoMobileKeysProgressCallback</span><span class="w"> </span><span class="n">mobileKeysCallback</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">//...</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p><code>applicationStartup(...)</code>, <code>endpointUpdate(...)</code>, and <code>endpointSetup(...)</code> are time consuming
+operations. They are executed asynchronously on a background thread and the result is delivered to
+the calling application, as the first parameter, via the <code>com.hid.origo.api.OrigoMobileKeysCallback</code>
+instance.</p>
+<p><code>com.hid.origo.api.OrigoMobileKeysProgressCallback</code>is a subclass of the callback interface and has
+an additional method of sending progress events during a setup or update. However, as there is no
+way of telling how many events will occur before the setup/update is finished, this information
+cannot be used for filling a progress bar, although it could be used for giving the user some other
+form of feedback.</p>
+<p>The call that takes the most time is the endpoint setup. This process could take anywhere between a
+few seconds and up to about a minute. Therefore, it is important to set user expectations before the
+process is started and provide feedback during the process, otherwise the user may assume the
+application is not responding.</p>
+<h3 id="application-startup">Application startup<a class="headerlink" href="#application-startup" title="Permanent link">⚓︎</a></h3>
+<p>The application startup method should be called during the startup phase of your application. This
+method ensures that the mobile device is in sync with the Seos TSM server and:</p>
+<ul>
+<li>Sends properties about the installation to the Seos TSM, for example, version of the SDK or
+  Android OS. The SDK detects when a property has changed and only performs an update if necessary.</li>
+<li>Detects interrupted communication with the Seos TSM and attempts to resume communication.</li>
+</ul>
+<p>Under normal circumstances server communication should not be interrupted. If, however, there is an
+application crash or memory issues on the mobile device, and the application is shut down, the SDK
+continues with outgoing messages to the Seos TSM. If, during application startup, there is a message
+pending, it is sent to the Seos TSM. This process may take some time, since the message might
+trigger a response from the server requiring more actions on the mobile device side and so on.</p>
+<p>This is generally a fast operation as it does not communication with the Seos TSM, however it may
+require more time if Seos TSM interaction is needed. The calling application needs to handle the
+fact that this call might take some time before it is finished.</p>
+<h3 id="endpoint-setup">Endpoint setup<a class="headerlink" href="#endpoint-setup" title="Permanent link">⚓︎</a></h3>
+<p>An endpoint (a Seos instance in a secure element), must be installed and personalized before it can
+be used to open locks. The application firstly needs to check if the endpoint setup on the device is
+completed using the following method:
+<code>com.hid.origo.api.OrigoMobileKeys.isEndpointSetupComplete</code></p>
+<p>If the endpoint setup on the device is not complete, the application needs to call the following and
+wait for the process to finish:</p>
+<p><code>com.hid.origo.api.OrigoMobileKeys.endpointSetup(OrigoMobileKeysCallback mobileKeysCallback, String activationCode, OrigoApplicationProperty... applicationProperties)</code></p>
+<p>As part of the registration process the end user is provided with an invitation code. This code is
+used to identify the endpoint in the Seos TSM and to secure the setup process. The code is
+four-times-four alphanumerical characters separated by dashes (XXXX-XXXX-XXXX-XXXX). It is a
+required parameter to the endpoint setup method.</p>
+<p>If the user is already authenticated, for example, using a backend server outside the TSM
+environment, there is no need to send the code to the user. The application can retrieve the
+invitation code from the backend server and feed it directly to the setup method in the SDK. In this
+way the user is transparently enrolled.</p>
+<p>Note, the endpoint setup may fail on a mobile data network as it includes multiple roundtrips
+between the SDK and the Seos TSM. Therefore, when the mobile device has a stable network connection,
+the application can re-try calling the endpoint setup using the same invitation code. The only
+exception is if the SDK reports an error with the following code:</p>
+<p><code>com.hid.origo.api.OrigoMobileKeysApiErrorCode.DEVICE_SETUP_FAILED.</code></p>
+<p>This means that the setup failed in a critical phase, and for security reasons, the application must
+restart using with a new invitation code.</p>
+<h2 id="combining-seos-wallet-oip">Combining SEOS, Wallet, OIP<a class="headerlink" href="#combining-seos-wallet-oip" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Existing endpointSetup integration:
+<br><br>For integrators who wants to use only SEOS, they can continue using the <code>OrigoMobileKeysCallback</code> interface. Use the following method for endpoint setup:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">endpointSetup</span><span class="p">(</span><span class="n">OrigoMobileKeysCallback</span><span class="w"> </span><span class="n">mobileKeysCallback</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">activationCode</span><span class="p">,</span><span class="w"> </span><span class="n">OrigoApplicationProperty</span><span class="p">...</span><span class="w"> </span><span class="n">applicationProperties</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+For integrating Wallet/OIP using the same method, it's crucial to update the listener from <code>OrigoMobileKeysCallback</code> to <code>OrigoEndpointSetupCallback</code>
+<br><br>Note : Incorrectly using <code>OrigoMobileKeysCallback</code> instead of <code>OrigoEndpointSetupCallback</code> for Wallet/OIP will result in an <code>IllegalArgumentException</code> being thrown.
+<br><br></li>
+<li>Target-specific endpointSetup integration:
+<br><br>For integrators wanting a comprehensive integration, the newly introduced target specific (SEOS/Wallet/OIP) method is available:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">endpointSetup</span><span class="p">(</span><span class="n">OrigoEndPointSetupCallback</span><span class="w"> </span><span class="n">origoEndPointSetupCallback</span><span class="p">,</span><span class="n">Target</span><span class="w"> </span><span class="n">target</span><span class="p">,....)</span>
+</code></pre></div></td></tr></table></div>
+Pass the Target parameter explicitly to determine the SEOS/Wallet/OIP flow. It provides a more streamlined approach to handle different integration scenarios.</li>
+</ul>
+<p><br>For more detailed Google Wallet or OIP integration refer:<br>
+<a href="google-wallet-integration.html">Google Wallet Integration</a><br>
+<a href="../code-samples/hid-identity-positioning.html">OIP Integration</a></p>
+<h2 id="origo-organization-specific-contact-information">Origo Organization specific contact information<a class="headerlink" href="#origo-organization-specific-contact-information" title="Permanent link">⚓︎</a></h2>
+<p>We would provide metadata to the APP with contact info so that the users would know whom to contact in case of problems.</p>
+<p>To integrate the Organization specific contact information in your application, The <code>getAdditionalMetadata()</code> of <code>OrigoMobileKey</code> provides additional metadata that contain the
+methods to fetch Organization specific contact information fields.</p>
+<h3 id="content-updates">Content updates<a class="headerlink" href="#content-updates" title="Permanent link">⚓︎</a></h3>
+<p>Updates such as new keys, revocation of keys, etc. are delivered to the mobile device from the Seos
+TSM. To download and process these updates, the application needs to call the following:</p>
+<p><code>com.hid.origo.api.OrigoMobileKeys.endpointUpdate(OrigoMobileKeysProgressCallback mobileKeysProgressCallback)</code></p>
+<p>The application can update content every time it is launched, or the application backend can use a
+push mechanism to tell the application when an update is available.</p>
+<h2 id="talking-to-seos-in-the-secure-element">Talking to Seos in the secure element<a class="headerlink" href="#talking-to-seos-in-the-secure-element" title="Permanent link">⚓︎</a></h2>
+<p>For the most common use cases, the <code>com.hid.origo.api.OrigoMobileKeys</code> interface contains
+functionality to communicate with Seos. The more advanced use cases can use the Seos Access API.
+This provides a high-level Java API for integrating with the Seos Card Technology. For detailed
+information on how to use it, refer to the Seos Access API documentation.</p>
+<p>Due to the single threaded nature of most secure elements, the <code>OrigoMobileKeys</code> implementation
+ensures that only one task is performed at a time. For example, one current request to list keys or
+a one-time consuming Seos TSM request. If there is already a request processing, or a Seos TSM task
+running, a <code>com.hid.origo.api.OrigoMobileKeysException</code> with the error code <code>API_IS_BUSY</code> will
+occur.</p>
+<h3 id="listing-issued-keys">Listing issued keys<a class="headerlink" href="#listing-issued-keys" title="Permanent link">⚓︎</a></h3>
+<p>To retrieve a list of <code>MobileKey</code> objects (representing all keys issued to this secure element), use
+the <code>listMobileKeys()</code> method. Each mobile key holds metadata about the key, for example, label,
+valid from/to dates, etc. If an application needs more information about the key, the metadata field
+<strong>configuration URL</strong> can be used to fetch more information from a remote server. For example, in
+our reference application we point this <strong>configuration URL</strong> to an XML document describing key card
+layout, background image, font size, color etc.</p>
+<h3 id="reading-metadata-about-seos">Reading metadata about Seos<a class="headerlink" href="#reading-metadata-about-seos" title="Permanent link">⚓︎</a></h3>
+<p>The <code>getEndpointInfo()</code> method provides metadata about the Seos installation.
+See <code>com.hid.origo.api.OrigoEndpointInfo</code> for more details about available data. This data is
+typically not useful for an end user but could be helpful for a support technician. We therefore
+encourage integrators to make this information available in some kind of help, support or about
+screen.</p>
+<h3 id="observing-changes">Observing changes<a class="headerlink" href="#observing-changes" title="Permanent link">⚓︎</a></h3>
+<p>It is possible to listen to keys and endpoint changes in the SDK by adding listeners to the
+<code>com.hid.origo.api.OrigoMobileKeys</code> interface.</p>
+<h2 id="bluetooth-reader-integration">Bluetooth reader integration<a class="headerlink" href="#bluetooth-reader-integration" title="Permanent link">⚓︎</a></h2>
+<p>The mobile device communicates with Bluetooth readers using Bluetooth Low Energy (also known as
+Bluetooth LE, BLE or Bluetooth Smart). Bluetooth LE was released as part of the Bluetooth 4.0 Core
+Specification, and Android support was first released as part of Android 4.3.</p>
+<p>The Android 5.0 release significantly improved the Bluetooth LE support in Android, for example,
+less power consumption, and support for scanning with the screen off. With the increased user
+integrity and privacy of Android 6.0, Bluetooth LE scanning now requires location permissions.</p>
+<p>Bluetooth implementation is hidden behind the following interface:
+<code>com.hid.origo.api.OrigoReaderConnectionController</code></p>
+<p>As an integrator user need to verify that the application supports Bluetooth before scanning. For
+this purpose, user can use the <code>OrigoBleSupportHelper</code> class in the in SDK. This helps to check if a
+device has the features required to be used with Bluetooth readers.</p>
+<h3 id="ble-configuration">BLE configuration<a class="headerlink" href="#ble-configuration" title="Permanent link">⚓︎</a></h3>
+<p>When the scan process is started in the BLE service you need to provide a <code>OrigoScanConfiguration</code>
+instance. The scan configuration contains the following parameters.</p>
+<table>
+<thead>
+<tr>
+<th><em>Parameter</em></th>
+<th><em>Description</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lock service code(s)</td>
+<td>Bluetooth readers advertise a UUID (universally unique identifier) identifying this BLE device as a reader.</td>
+</tr>
+<tr>
+<td>The lock service code is part of that UUID. The UUID might differ between different types of readers.</td>
+<td></td>
+</tr>
+<tr>
+<td>Consult with your lock provider to receive the service code used by the reader you want to integrate to.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RSSI sensitivity</td>
+<td>RSSI values are used to calculate distance to a reader. These values differ between different phone manufacturers, models and even individual phones. On a device where e.g. the proximity mode works poorly and the user would have to almost touch the reader with his phone, the signal can be boosted by specifying RssiSensitivity.HIGH, and if the device opens a lock at too long range, you would use RssiSensitivity.LOW.</td>
+</tr>
+<tr>
+<td>To use the RSSI values received from the lock, without modifications, specify RssiSensitivity.NORMAL.</td>
+<td></td>
+</tr>
+<tr>
+<td>This could be presented as a setting for the user, or tuned as part of some kind of automatic process.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Scan mode (optional)</td>
+<td>Mode to indicate to the SDK if the application wants to prioritize power consumption or performance when scanning for BLE readers. The scan mode setting only works in Android 5.0, and will be ignored on 4.3 and 4.4 devices. The default setting is to prioritize the power consumption.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BLE opening triggers</td>
+<td>List of opening trigger implementations that the application wants to enable. The SDK provides three implementations: Twist and Go, Proximity and Seamless.</td>
+</tr>
+</tbody>
+</table>
+<p>To change configuration parameters once scanning is started, update the <code>OrigoScanConfiguration</code>
+instance with new configuration parameters.</p>
+<h3 id="opening-modes">Opening modes<a class="headerlink" href="#opening-modes" title="Permanent link">⚓︎</a></h3>
+<p>There are several types of opening modes supported by a Bluetooth reader. A reader can be configured
+to support one or more of these opening modes. Support for more opening modes is planned for future
+releases of the SDK. The modes currently supported are:</p>
+<ul>
+<li><strong>Proximity aka Tap</strong>: The mobile device functions like an access card or tag. This mode is typically used
+  when the mobile device is in close proximity to the reader.</li>
+<li><strong>Seamless</strong>: Opens the lock as the user approaches. This works best with Android 5.0, as the user
+  is not required to power on the screen. It could also be used with older models with the
+  restriction that the user is required to power on the screen. Seamless is not suitable for all
+  readers and environments, consult with your reader provider for more details.</li>
+<li><strong>Twist and Go</strong>: The user rotates the mobile device 90 degrees in one direction and then back
+  again. This opens the closest reader within range.</li>
+</ul>
+<p>To implement custom opening mode look at the documentation
+on (<code>com.hid.origo.api.ble.OrigoOpeningTrigger</code>). The OrigoReaderConnectionController also supports
+manual opening, however the underlying mechanism still relies on opening triggers.</p>
+<h3 id="reader-connection-callbacks">Reader connection callbacks<a class="headerlink" href="#reader-connection-callbacks" title="Permanent link">⚓︎</a></h3>
+<p>Callbacks are delivered to the implementing application using the
+<code>com.hid.origo.api.ble.OrigoReaderConnectionCallback</code> interface. The Bluetooth LE service notifies
+the connection listener when a reader connection is opened, closed, or has failed. These methods are
+typically used to give the user feedback using sound, vibration, or the UI. Please note that in some
+failure cases the Reader parameter in the callback may be null, for example, when the user has
+performed an open motion with no readers within range. For more information on how to register for
+and handle callbacks, refer to the javadoc for the
+<code>com.hid.origo.api.ble.OrigoReaderConnectionCallback</code> and related classes.</p>
+<h3 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">⚓︎</a></h3>
+<p>A Bluetooth LE reader can only make one connection at a time. Therefore, when two apps attempt to
+open simultaneously, using Bluetooth, the app opening can be very slow.</p>
+<h2 id="host-based-card-emulation-nfc">Host-based Card Emulation (NFC)<a class="headerlink" href="#host-based-card-emulation-nfc" title="Permanent link">⚓︎</a></h2>
+<p>Android version 4.4 introduced a mechanism for an Android device to emulate a contactless card using
+NFC. This feature is referred to as Host-based Card Emulation (HCE). Detailed information of this
+feature can be found in the Android API guides.</p>
+<p>The SDK contains a service implementing HCE. The service is disabled by default but can be either
+enabled or disabled using com.hid.origo.api.OrigoReaderConnectionController.</p>
+<p>To configure the HCE service you need to be assigned an AID (Application Identifier) by HID Global.
+When you have received the AID you need to create a <strong>seos_hce_service.xml</strong> file, add your HCE AID,
+and provide it as a resource. HCE configuration file <strong>res/xml/seos_hce_service.xml</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;host-apdu-service</span><span class="w"> </span><span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="w">      </span><span class="na">android:description=</span><span class="s">&quot;@string/seos_hce_description&quot;</span>
+<span class="w">      </span><span class="na">android:requireDeviceUnlock=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;aid-group</span><span class="w"> </span><span class="na">android:description=</span><span class="s">&quot;@string/seos_hce_aid_description&quot;</span><span class="w"> </span><span class="na">android:category=</span><span class="s">&quot;other&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="cm">&lt;!-- Specify your AID here, will be assigned to you by HID! --&gt;</span>
+<span class="w">        </span><span class="nt">&lt;aid-filter</span><span class="w"> </span><span class="na">android:name=</span><span class="s">&quot;...&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/aid-group&gt;</span>
+<span class="nt">&lt;/host-apdu-service&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="reader-connection-callbacks_1">Reader connection callbacks<a class="headerlink" href="#reader-connection-callbacks_1" title="Permanent link">⚓︎</a></h3>
+<p>Callbacks are delivered to the implementing application using the
+<code>com.hid.origo.api.hce.OrigoHceConnectionCallback</code>interface. The HCE service notifies the
+connection listener when a reader connection is opened, closed, or has failed. These methods are
+typically used to give the user feedback, using sound, vibration, or through the UI. For more
+information on how to register for and handle callbacks, refer to the javadoc for
+<code>com.hid.origo.api.hce.OrigoHceConnectionCallback</code> and related classes.</p>
+<h3 id="application-logging">Application logging<a class="headerlink" href="#application-logging" title="Permanent link">⚓︎</a></h3>
+<p>We have released a new logging API called Log4o to help with effective troubleshooting of bugs in
+the production build. Log4o will assist in the recording of persistent debug logs securely in the
+production application. Logs are captured on-demand to know more about Log4o and its usage please
+refer the java documentation.</p>
+<p>We can initialize the LOGGER using com.hid.origo.logger.OrigoLogger.getLoggerFactory().getLogger("<Tag Name>");</p>
+<p>To allow the Log4o to record the logs use below listed methods-</p>
+<table>
+<thead>
+<tr>
+<th><em>methods</em></th>
+<th><em>Description</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OrigoMobileKeysApi.enableLogs(boolean)</td>
+<td>Used to allow the Log4o to start/stop recording the persistent logs.</td>
+</tr>
+<tr>
+<td>OrigoMobileKeysApi.getLogReport()</td>
+<td>Used to retrieve the URI's of recorded logs.</td>
+</tr>
+<tr>
+<td>LOGGER.trace(String msg)</td>
+<td>Log a message at the VERBOSE level.</td>
+</tr>
+<tr>
+<td>LOGGER.trace(String msg, Throwable t)</td>
+<td>Log an exception (throwable) at the VERBOSE level with an accompanying message.</td>
+</tr>
+<tr>
+<td>LOGGER.trace(String format, Object... args)</td>
+<td>Log a message at the VERBOSE level according to the specified format and argument.</td>
+</tr>
+<tr>
+<td>LOGGER.info(String msg)</td>
+<td>Log a message at the INFO level.</td>
+</tr>
+<tr>
+<td>LOGGER.info(String msg, Throwable t)</td>
+<td>Log an exception (throwable) at the INFO level with an accompanying message.</td>
+</tr>
+<tr>
+<td>LOGGER.info(String format, Object... args)</td>
+<td>Log a message at the INFO level according to the specified format and argument.</td>
+</tr>
+<tr>
+<td>LOGGER.warn(String msg)</td>
+<td>Log a message at the WARN level.</td>
+</tr>
+<tr>
+<td>LOGGER.warn(String msg, Throwable t)</td>
+<td>Log an exception (throwable) at the WARN level with an accompanying message.</td>
+</tr>
+<tr>
+<td>LOGGER.warn(String format, Object... args)</td>
+<td>Log a message at the WARN level according to the specified format and argument.</td>
+</tr>
+<tr>
+<td>LOGGER.debug(String msg)</td>
+<td>Log a message at the DEBUG level.</td>
+</tr>
+<tr>
+<td>LOGGER.debug(String msg, Throwable t)</td>
+<td>Log an exception (throwable) at the DEBUG level with an accompanying message.</td>
+</tr>
+<tr>
+<td>LOGGER.debug(String format, Object... args)</td>
+<td>Log a message at the DEBUG level according to the specified format and argument.</td>
+</tr>
+<tr>
+<td>LOGGER.error(String msg)</td>
+<td>Log a message at the ERROR level.</td>
+</tr>
+<tr>
+<td>LOGGER.error(String msg, Throwable t)</td>
+<td>Log an exception (throwable) at the ERROR level with an accompanying message.</td>
+</tr>
+<tr>
+<td>LOGGER.error(String format, Object... args)</td>
+<td>Log a message at the ERROR level according to the specified format and argument.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="limitations_1">Limitations<a class="headerlink" href="#limitations_1" title="Permanent link">⚓︎</a></h3>
+<p>The OS selects a HCE service based on the AID. Therefore, if the device has several applications
+implementing the same AID, the user is either prompted to select which application to use or the
+system chooses the default application. To avoid the prompt, make sure to register
+<code>com.assaabloy.mobilekeys.api.hce.HceService</code> as preferred service.</p>
+<p>For <code>HceService</code> to function in the background ensure that <code>OrigoMobileKeysApi</code> is initialized. This
+can be achieved by extending the Android application and initializing <code>OrigoMobileKeysApi</code> in the
+<code>onCreate()</code> callback.</p>
+<h3 id="device-eligibility">Device eligibility<a class="headerlink" href="#device-eligibility" title="Permanent link">⚓︎</a></h3>
+<p>The Origo SDK contains functionality to check eligibility of the device the SDK is running on. The
+<code>com.hid.origo.api.OrigoDeviceEligibility</code> class contains information about working/non-working
+features for the device. It also contains recommended RSSI settings for the device. This feature
+should be used before initializing the API and can be used to customize the user experience, for
+example, turning off NFC on devices where NFC is known to fail.</p>
+<p>The Origo SDK introduced a way to check eligibility of the device the SDK is running on.
+The <code>com.hid.origo.api.OrigoDeviceEligibility</code> contains information about working/non working
+features for the device. It also contains recommended RSSI settings for the device. This feature
+should be used before initializing the API and could be used to customize the user experience, e.g.
+turning off NFC on devices where NFC is known to fail.</p>
+<h3 id="device-status">Device Status<a class="headerlink" href="#device-status" title="Permanent link">⚓︎</a></h3>
+<p>The <code>com.assaabloy.mobilekeys.api.util.DeviceStatus</code>class contains information about the current
+status of a device relating to BLE and NFC. It can be asked about permissions, system supported
+features, and other things.</p>
+<h3 id="enforcement-policy">Enforcement Policy<a class="headerlink" href="#enforcement-policy" title="Permanent link">⚓︎</a></h3>
+<p>This method can be used to verify that the organization admin enforce higher level of security for its end users to limit their usage of mobile app only when phone is in unlocked state.</p>
+<p>Please refer java docs – <code>isDeviceEnforcementEnabled()</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2014-2021 HID Global Corporation, part of ASSA ABLOY. All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/hidglobal/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/HIDGlobal" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/HIDGlobal" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://us.linkedin.com/company/hid-global" target="_blank" rel="noopener" title="us.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/hidglobal" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.hidglobal.com/solutions/access-control/hid-mobile-access-solutions" target="_blank" rel="noopener" title="www.hidglobal.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

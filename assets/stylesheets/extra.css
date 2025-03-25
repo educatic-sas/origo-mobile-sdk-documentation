@@ -1,0 +1,36 @@
+.md-header{
+    background-color: #005199 !important;
+}
+
+.md-tabs{
+    background-color: hsla(0, 0%, 0%, 0.54) !important;
+    color:white;
+    display: grid;
+}
+
+.md-nav__link {
+    color: black !important;
+}
+
+.md-nav__link--active {
+    color: #005199 !important;
+    text-indent: 5px;
+    text-decoration-line: underline;
+}
+
+.md-footer{
+    background-color: hsla(0, 0%, 0%, 0.54) !important;
+}
+
+.md-footer-meta {
+    background-color: #005199 !important;
+    font-style: italic;
+}
+
+.md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
+    display: block;
+    width: 6em;
+    height: 6em;
+    margin-top: -20px;
+}
+
